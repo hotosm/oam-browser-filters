@@ -87,18 +87,18 @@ function getSearchParameters (dateFilter, resolutionFilter, dataTypeFilter) {
     'low': {gsd_from: 5}, // 5 +
     'medium': {gsd_from: 1, gsd_to: 5}, // 1 - 5
     'high': {gsd_to: 1} // 1
-  }[resolutionFilter.id];
+  }[resolutionFilter.key];
 
   var d = new Date();
-  if (dateFilter.id === 'week') {
+  if (dateFilter.key === 'week') {
     d.setDate(d.getDate() - 7);
-  } else if (dateFilter.id === 'month') {
+  } else if (dateFilter.key === 'month') {
     d.setMonth(d.getMonth() - 1);
-  } else if (dateFilter.id === 'year') {
+  } else if (dateFilter.key === 'year') {
     d.setFullYear(d.getFullYear() - 1);
   }
 
-  var dateParam = dateFilter.id === 'all' ? {} : {
+  var dateParam = dateFilter.key === 'all' ? {} : {
     acquisition_from: [
       d.getFullYear(),
       d.getMonth() + 1,
@@ -106,7 +106,7 @@ function getSearchParameters (dateFilter, resolutionFilter, dataTypeFilter) {
     ].join('-')
   };
 
-  var typeParam = dataTypeFilter.id === 'all' ? {} : { has_tiled: true };
+  var typeParam = dataTypeFilter.key === 'all' ? {} : { has_tiled: true };
 
   return xtend(resolutionParam, dateParam, typeParam);
 }
