@@ -18,5 +18,8 @@
   "homepage": "https://github.com/hotosm/oam-browser-filters#readme",
   "devDependencies": {
     "semistandard": "^7.0.2"
+  },
+  "dependencies": {
+    "xtend": "^4.0.0"
   }
 }
