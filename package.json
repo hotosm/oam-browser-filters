@@ -1,0 +1,22 @@
+{
+  "name": "oam-browser-filters",
+  "version": "1.0.0",
+  "description": "The grid filters used by the oam-browser front end ",
+  "main": "index.js",
+  "scripts": {
+    "test": "semistandard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hotosm/oam-browser-filters.git"
+  },
+  "author": "Anand Thakker <vestibule@anandthakker.net> (http://anandthakker.net/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hotosm/oam-browser-filters/issues"
+  },
+  "homepage": "https://github.com/hotosm/oam-browser-filters#readme",
+  "devDependencies": {
+    "semistandard": "^7.0.2"
+  }
+}
