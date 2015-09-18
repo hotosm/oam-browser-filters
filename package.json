@@ -1,6 +1,6 @@
 {
   "name": "oam-browser-filters",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The grid filters used by the oam-browser front end ",
   "main": "index.js",
   "scripts": {
