@@ -74,7 +74,7 @@ function getCombination (dateFilter, resolutionFilter, dataTypeFilter) {
     date: getFilter(date, dateFilter),
     resolution: getFilter(resolution, resolutionFilter),
     dataType: getFilter(dataType, dataTypeFilter),
-    searchParameters: getSearchParameters(date, resolutionFilter, dataTypeFilter)
+    searchParameters: getSearchParameters(dateFilter, resolutionFilter, dataTypeFilter)
   };
   c.key = CHARS[c.date.index + c.resolution.index + c.dataType.index];
 
